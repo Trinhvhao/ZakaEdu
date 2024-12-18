@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .booking-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+    }
+    .btn-orange {
+      background-color: #ff6600;
+      color: white;
+    }
+    .btn-orange:hover {
+      background-color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container booking-container">
+  <h5 class="text-primary">Khách sạn xem gần đây</h5>
+  <form>
+    <div class="mb-3">
+      <label for="destination" class="form-label">Thành phố, địa điểm hoặc tên khách sạn:</label>
+      <input type="text" class="form-control" id="destination" placeholder="Đà Nẵng" value="Đà Nẵng">
+    </div>
+
+    <div class="row g-2">
+      <div class="col-md-6">
+        <label for="checkin" class="form-label">Nhận phòng:</label>
+        <input type="date" class="form-control" id="checkin" value="2024-11-10">
+      </div>
+      <div class="col-md-6">
+        <label for="nights" class="form-label">Số đêm:</label>
+        <select class="form-select" id="nights">
+          <option selected>1 đêm</option>
+          <option>2 đêm</option>
+          <option>3 đêm</option>
+          <!-- Thêm các lựa chọn khác -->
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="checkout" class="form-label">Trả phòng:</label>
+      <input type="text" class="form-control" id="checkout" value="Thứ 2, 11 thg 11 2024" disabled>
+    </div>
+
+    <div class="mb-3">
+      <label for="guests" class="form-label">Khách và Phòng:</label>
+      <select class="form-select" id="guests">
+        <option selected>2 người lớn, 0 Trẻ em, 1 phòng</option>
+        <option>1 người lớn, 0 Trẻ em, 1 phòng</option>
+        <option>2 người lớn, 1 Trẻ em, 1 phòng</option>
+        <!-- Thêm các lựa chọn khác -->
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <span class="text-primary"><i class="bi bi-cash"></i> Thanh Toán Tại Khách Sạn</span>
+    </div>
+
+    <button type="submit" class="btn btn-orange w-100">Tìm khách sạn</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>

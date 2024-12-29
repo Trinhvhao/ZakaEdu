@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
     <link
@@ -352,7 +352,7 @@
           style="max-width: 800px"
         >
           <h4 class="text-primary">Giá trị cốt lõi</h4>
-          <h1 class="heading display-4">4 giá trị Zaka luôn theo đuổi</h1>
+          <h1 class="text-primary display-4">4 giá trị Zaka luôn theo đuổi</h1>
         </div>
         <div class="row g-4">
           <div
@@ -431,20 +431,87 @@
     </div>
     <!-- Feature End -->
 
+<!-- Clients Section -->
+<section id="clients" class="clients section p-4">
+  <div class="container wow fadeInDown" data-wow-delay="0.2">
+    <!-- Section Title -->
+    <div class="container text-center">
+      <h1 class="text-primary display-4">Đối tác</h1>
+    </div>
+    <!-- End Section Title -->
+    <div class="swiper init-swiper" style="padding: 30px;">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 1000,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "480": {
+              "slidesPerView": 2,
+              "spaceBetween": 60
+            },
+            "640": {
+              "slidesPerView": 3,
+              "spaceBetween": 80
+            },
+            "992": {
+              "slidesPerView": 5,
+              "spaceBetween": 120
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide">
+          <img src="img/clients/client-1.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/clients/client-2.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/clients/client-3.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/clients/client-4.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/clients/client-5.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/clients/client-6.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<!-- /Clients Section -->
     <!-- About Start -->
     <div class="container-fluid bg-light about pb-2">
       <div class="container pb-5">
         <div class="row g-5">
           <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
             <div class="about-item-content bg-white rounded p-5 h-100">
-              <h1 class="heading display-4 mb-4">Sứ mệnh</h1>
+              <h1 class="text-primary display-4 mb-4">Sứ mệnh</h1>
               <p>
                 Bạn đã sẵn sàng chinh phục tiếng Anh và mở ra cơ hội toàn cầu
                 chưa? Bạn có muốn tự tin giao tiếp và thành công trong các kỳ
                 thi quan trọng?
               </p>
               <p>
-                <span style="font-weight: bold; color: #015fc9; font-size: 2rem"
+                <span style="font-weight: bold; color: #015fc9"
                   >Zaka English</span
                 >
                 không chỉ là một trung tâm tiếng Anh, mà còn là một cộng đồng
@@ -538,151 +605,133 @@
     </div>
     <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service">
-      <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Our Services</h4>
-          <h1 class="display-4 mb-4">We Provide Best Services</h1>
-          <p class="mb-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            adipisci facilis cupiditate recusandae aperiam temporibus corporis
-            itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
-            obcaecati, ipsam mollitia hic.
-          </p>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/blog-1.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-users fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4">Life Insurance</a>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis, eum!
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
+<!-- News Start -->
+<div class="container-fluid news">
+  <div class="container py-5">
+    <div
+      class="text-center mx-auto pb-5 wow fadeInUp"
+      data-wow-delay="0.2s"
+      style="max-width: 800px"
+    >
+      <h4 class="text-primary">Bảng Tin</h4>
+      <h1 class="display-4 mb-4">Tin Tức & Hoạt Động Nổi Bật</h1>
+      <p class="mb-0">
+        Cập nhật những thông tin mới nhất về các hoạt động, sự kiện, và các khóa học từ trung tâm của chúng tôi.
+      </p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.2s"
+      >
+        <div class="news-item">
+          <div class="news-img">
+            <img
+              src="img/news-1.png"
+              class="img-fluid rounded-top w-100"
+              alt="Sự kiện mới"
+            />
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/blog-2.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-hospital fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4"
-                    >Health Insurance</a
-                  >
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis, eum!
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
+          <div class="news-content p-4">
+            <div class="news-content-inner">
+              <a href="#" class="d-inline-block h4 mb-4">Sự Kiện Giao Lưu</a>
+              <p class="mb-4">
+                Tham gia buổi giao lưu tiếng Anh với giảng viên nước ngoài, giúp cải thiện kỹ năng nghe nói hiệu quả.
+              </p>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                >Xem Thêm</a
+              >
             </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/blog-3.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-car fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4">Car Insurance</a>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis, eum!
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/blog-4.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-home fa-2x"></i>
-                </div>
-              </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4">Home Insurance</a>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis, eum!
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-            <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
-              >More Services</a
-            >
           </div>
         </div>
       </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.4s"
+      >
+        <div class="news-item">
+          <div class="news-img">
+            <img
+              src="img/news-2.png"
+              class="img-fluid rounded-top w-100"
+              alt="Lớp học miễn phí"
+            />
+          </div>
+          <div class="news-content p-4">
+            <div class="news-content-inner">
+              <a href="#" class="d-inline-block h4 mb-4"
+                >Lớp Học Trải Nghiệm</a
+              >
+              <p class="mb-4">
+                Đăng ký ngay lớp học miễn phí với giáo viên bản ngữ để thử sức và trải nghiệm phương pháp học độc đáo.
+              </p>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                >Xem Thêm</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.6s"
+      >
+        <div class="news-item">
+          <div class="news-img">
+            <img
+              src="img/news-3.png"
+              class="img-fluid rounded-top w-100"
+              alt="Khóa học mới"
+            />
+          </div>
+          <div class="news-content p-4">
+            <div class="news-content-inner">
+              <a href="#" class="d-inline-block h4 mb-4">Khóa Học Mới</a>
+              <p class="mb-4">
+                Khám phá các khóa học mới dành cho trẻ em và sinh viên với chương trình học hiện đại, cá nhân hóa.
+              </p>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                >Xem Thêm</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.8s"
+      >
+        <div class="news-item">
+          <div class="news-img">
+            <img
+              src="img/news-4.png"
+              class="img-fluid rounded-top w-100"
+              alt="Ưu đãi đặc biệt"
+            />
+          </div>
+          <div class="news-content p-4">
+            <div class="news-content-inner">
+              <a href="#" class="d-inline-block h4 mb-4">Ưu Đãi Hấp Dẫn</a>
+              <p class="mb-4">
+                Nhận ưu đãi đặc biệt khi đăng ký các khóa học ngay hôm nay. Đừng bỏ lỡ cơ hội học tập với chi phí ưu đãi!
+              </p>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                >Xem Thêm</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+        <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
+          >Xem Tất Cả</a
+        >
+      </div>
     </div>
-    <!-- Service End -->
+  </div>
+</div>
+<!-- News End -->
+
 
     <!-- FAQs Start -->
     <div class="container-fluid faq-section bg-light py-5">
@@ -699,7 +748,7 @@
           >
             <div class="h-100">
               <div class="mb-5">
-                <h1 class="heading display-4 mb-0 font-title">
+                <h1 class=" display-4 mb-0 font-title">
                   Câu Hỏi Thường Gặp
                 </h1>
               </div>
@@ -822,155 +871,118 @@
     </div>
     <!-- FAQs End -->
 
-
     <!-- Team Start -->
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="section-heading " style="margin-bottom: 150px;">
-              <h1 class="heading display-4 mt-5">Đội ngũ giáo viên truyền cảm hứng</h1>
-              <p
-                style="
-                  color: #555;
-                  margin: auto;
-                  width: 80%;
-                  text-align: center;
-                "
-              >
-                Chúng tôi tự hào có đội ngũ giảng viên trẻ trung, năng động và
-                giàu kinh nghiệm, luôn tận tâm và nhiệt huyết trong từng buổi
-                học. Họ không chỉ giúp bạn cải thiện kỹ năng tiếng Anh mà còn
-                truyền cảm hứng học tập và phát triển bản thân.
-              </p>
-            </div>
-          </div>
+    <div class="container-fluid team pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h1 class="text-primary display-4 mb-0">Đội ngũ</h1>
+          <h5 class="mb-0 text-primary">
+            Zaka Edu tự hào có đội ngũ giáo viên chuyên nghiệp với nhiều năm
+            kinh nghiệm
+          </h5>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="img/teacher_qk.png" alt="" />
-                <span class="category">Chứng chỉ TESOL</span>
-                <h4>Mr. Quốc Khánh</h4>
-                <ul class="social-icons">
+        <div
+          class="owl-carousel team-carousel wow fadeInUp"
+          data-wow-delay="0.2s"
+        >
+          <div class="team-item bg-light rounded">
+            <div class="text-center p-4">
+              <img
+                src="img/teacher_qk.png"
+                class="img-fluid rounded-circle m-auto"
+                style="width: 120px; height: 120px; object-fit: cover"
+              />
+              <h5 class="text-dark mb-0">Thầy Quốc Khánh</h5>
+              <p class="text-primary mb-3">8.0 IELTS Overall</p>
+
+              <hr />
+              <div class="achievements mt-3">
+                <h6 class="text-primary">Thành tựu:</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>🎓 Tốt nghiệp NNA - ĐH Hà Nội</li>
+                  <li>🏆 Chứng chỉ quốc tế TESOL</li>
                   <li>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    ✍️ Biên soạn nhiều tài liệu giảng dạy tiếng Anh được đánh
+                    giá cao.
                   </li>
                   <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                </ul>
-                <ul
-                  class="achievements"
-                >
-                  <li>- Giảng dạy trên 4 năm cho sinh viên và người đi làm.</li>
-                  <li>- Tốt nghiệp khoa NNA đại học Hà Nội loại giỏi</li>
-                  <li>- Chứng chỉ IELTS 7.5</li>
-                  <li>- Chứng chỉ quốc tế TESOL với điểm số xuất sắc.</li>
-                  <li>
-                    - Biên soạn nhiều tài liệu giảng dạy tiếng Anh được đánh giá
-                    cao.
+                    🌟 Giảng dạy trên 4 năm cho sinh viên và người đi làm.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="img/teacher_tt.png" alt="" />
-                <span class="category">Chứng chỉ TESOL</span>
-                <h4>Mrs.Trang Trần</h4>
-                <ul class="social-icons">
-                  <li>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </li>
+          <div class="team-item bg-light rounded">
+            <div class="text-center p-4">
+              <img
+                src="img/teacher-03.png"
+                class="img-fluid rounded-circle m-auto"
+                style="width: 120px; height: 120px; object-fit: cover"
+              />
+              <h5 class="text-dark mb-0">Cô Mayya</h5>
+              <p class="text-primary mb-3">Giáo viên nước ngoài</p>
+
+              <hr />
+              <div class="achievements mt-3">
+                <h6 class="text-primary">Thành tựu:</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>🏆 Chứng nhận TESOL quốc tế.</li>
+                  <li>📚 Hơn 5 năm kinh nghiệm giảng dạy tại các trung tâm.</li>
+                  <li>🎓 Giúp hơn 100 học viên đạt 7.0 speaking.</li>
+                  <li>🌍 Từng giảng dạy tại các quốc gia khác nhau.</li>
                 </ul>
-                <ul class="achievements">
-                  <li>- Giám đốc Anh Ngữ VinWay.</li>
-                  <li>- Founder các dự án Tiếng Anh cho sinh viên</li>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-item bg-light rounded">
+            <div class="text-center p-4">
+              <img
+                src="img/teacher_tt.png"
+                class="img-fluid rounded-circle m-auto"
+                style="width: 120px; height: 120px; object-fit: cover"
+              />
+              <h5 class="text-dark mb-0">Chị Trang Trần</h5>
+              <p class="text-primary mb-3">Chứng chỉ quốc tế TESOL</p>
+
+              <hr />
+              <div class="achievements mt-3">
+                <h6 class="text-dark">Thành tựu & Đóng góp:</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>🏆 Chứng chỉ quốc tế TESOL.</li>
                   <li>
-                    - Hơn 5 năm kinh nghiệm giảng dạy sinh viên và người đi làm
+                    🎓 5 năm kinh nghiệm giảng dạy sinh viên và người đi làm.
                   </li>
-                  <li>- Chứng chỉ quốc tế TESOL.</li>
                   <li>
-                    - Leader các dự án tiếng Anh cho sinh viên nhiều trường đại
-                    học như ĐHQGHN, Bách Khoa, KTQD, DNU, Phenikaa...
+                    🌟 Cố vấn các dự án tiếng Anh cho sinh viên nhiều trường ĐH
+                    lớn như ĐH QGHN, ĐH Bách Khoa, ĐH KTQD.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="img/teacher-03.png" alt="" />
-                <span class="category">Giáo viên nước ngoài</span>
-                <h4>Ms.Maya</h4>
-                <ul class="social-icons">
-                  <li>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                </ul>
-                <ul class="achievements">
-                  <li>
-                    - Giáo viên ESL có kinh nghiệm, chuyên dạy học cho sinh viên
-                  </li>
-                  <li>
-                    - Giáo viên ESL tại Ms. Hoa Junior, Hà Nội từ năm 2023
-                  </li>
-                  <li>
-                    - Giáo viên ESL tại Ielts Fighter (Câu lạc bộ giao tiếp), Hà
-                    Nội
-                  </li>
-                  <li>
-                    - Phong cách dạy dễ hiểu, thân thiện, nhiệt tình giúp đỡ
-                  </li>
-                  <li>- Chuyên luyện thi trình độ TOEIC, IELTS</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="img/teacher_ha.png" alt="" />
-                <span class="category">IELTS 7.5</span>
-                <h4>Mr.Hoàng Anh</h4>
-                <ul class="social-icons">
-                  <li>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                </ul>
-                <ul class="achievements">
-                  <li>- Chuyên luyện thi trình độ TOEIC, IELTS.</li>
-                  <li>- Hai lần đạt chứng chỉ TOEIC 990.</li>
-                  <li>- Biên tập viên dịch thuật Anh-Việt.</li>
-                  <li>- Cử nhân Ngôn Ngữ Anh, Đại học Bách Khoa Hà Nội.</li>
-                  <li>- Chứng chỉ quốc tế TESOL.</li>
-                  <li>- Xây dựng 15+ khóa học mới và nâng cấp 20+ khóa học Tiếng Anh cho các trung tâm.</li>
+          <div class="team-item bg-light rounded">
+            <div class="text-center p-4">
+              <img
+                src="img/teacher_ha.png"
+                class="img-fluid rounded-circle m-auto"
+                style="width: 120px; height: 120px; object-fit: cover"
+              />
+              <h5 class="text-dark mb-0">Thầy Hoàng Anh</h5>
+              <p class="text-primary mb-3">TOEIC 990</p>
+
+              <hr />
+              <div class="achievements mt-3">
+                <h6 class="text-primary">Thành tựu & Đóng góp:</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>🏆 Chứng chỉ TOEIC 990 hai lần.</li>
+                  <li>🎓 Cử nhân Ngôn Ngữ Anh - Đại học Bách Khoa Hà Nội.</li>
+                  <li>📚 Chứng chỉ quốc tế TESOL.</li>
+                  <li>✍️ BTV Anh-Việt chuyên nghiệp.</li>
                 </ul>
               </div>
             </div>
@@ -1102,290 +1114,492 @@
     </div>
     <!-- Testimonial End -->
 
-     <!-- gallery Section -->
-     <section id="gallery" class="gallery section wow fadeInUp"
-     data-wow-delay="0.2s">
-
+    <!-- gallery Section -->
+    <section
+      id="gallery"
+      class="gallery section wow fadeInUp"
+      data-wow-delay="0.2s"
+    >
       <!-- Section Title -->
-      <div class="container text-center" >
-        <h1 class="heading display-4">Một số hình ảnh tại Zaka Edu</h1>
-      </div><!-- End Section Title -->
+      <div class="container text-center">
+        <h1 class="text-primary display-4">Một số hình ảnh tại Zaka Edu</h1>
+      </div>
+      <!-- End Section Title -->
 
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div
+          class="isotope-layout"
+          data-default-filter="*"
+          data-layout="masonry"
+          data-sort="original-order"
+        >
           <ul class="gallery-filters isotope-filters">
             <li data-filter="*" class="filter-active">Tất cả</li>
             <li data-filter=".filter-class">Lớp Học</li>
             <li data-filter=".filter-activity">Hoạt Động</li>
             <li data-filter=".filter-cer">Chứng Chỉ</li>
             <li data-filter=".filter-team">Đội Ngũ</li>
-          </ul><!-- End gallery Filters -->
+          </ul>
+          <!-- End gallery Filters -->
 
-          <div class="row gy-4 isotope-container" >
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-class">
+          <div class="row gy-4 isotope-container">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-class"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/class_1.jpeg" class="img-fluid" alt="">
+                <img
+                  src="./img/Gallery/class_1.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
                 <div class="gallery-info">
                   <h4>Lớp luyện Tiếng anh giao tiếp</h4>
                   <p>Lớp luyện Tiếng anh giao tiếp</p>
-                  <a href="./img/Gallery/class_1.jpeg" title="Hình ảnh lớp học" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/class_1.jpeg"
+                    title="Hình ảnh lớp học"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-class">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-class"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/class_2.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/class_2.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Lớp luyện kĩ năng giao tiếp</h4>
                   <p>Lớp luyện kĩ năng giao tiếp</p>
-                  <a href="./img/Gallery/class_2.jpg" title="Hình ảnh lớp học" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/class_2.jpg"
+                    title="Hình ảnh lớp học"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-class">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-class"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/class_3.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/class_3.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Buổi workshop miễn phí dành cho sinh viên</h4>
                   <p>Buổi workshop miễn phí dành cho sinh viên</p>
-                  <a href="./img/Gallery/class_3.jpg" title="Hình ảnh lớp học" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/class_3.jpg"
+                    title="Hình ảnh lớp học"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-class">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-class"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/class_4.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/class_4.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Luyện thi TOEIC lớp nhỏ cùng GVNN</h4>
                   <p>Luyện thi TOEIC lớp nhỏ cùng GVNN</p>
-                  <a href="./img/Gallery/class_4.jpg" title="Hình ảnh lớp học" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/class_4.jpg"
+                    title="Hình ảnh lớp học"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/act_1.JPG" class="img-fluid" alt="">
+                <img src="./img/Gallery/act_1.JPG" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Tư vấn lộ trình học TA hiệu quả</h4>
                   <p>Tư vấn lộ trình học TA hiệu quả</p>
-                  <a href="./img/Gallery/act_1.JPG" title="Hoạt động tại Zaka Edu" data-gallery="gallery-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/act_1.JPG"
+                    title="Hoạt động tại Zaka Edu"
+                    data-gallery="gallery-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
             <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-cer">
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/act_2.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/act_2.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Trao học bổng cho sinh viên xuất sắc</h4>
                   <p>Trao học bổng cho sinh viên xuất sắc</p>
-                  <a href="./img/Gallery/act_2.jpg" title="Hoạt động tại Zaka Edu" data-gallery="gallery-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/act_2.jpg"
+                    title="Hoạt động tại Zaka Edu"
+                    data-gallery="gallery-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/act_3.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/act_3.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Sự kiện tổng kết năm học khoa QTKD DNU</h4>
                   <p>Sự kiện tổng kết năm học khoa QTKD DNU</p>
-                  <a href="./img/Gallery/act_3.jpg" title="Hoạt động tại Zaka Edu" data-gallery="gallery-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/act_3.jpg"
+                    title="Hoạt động tại Zaka Edu"
+                    data-gallery="gallery-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/act_4.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/act_4.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Sự kiện chào tân 2024 tại khoa QTKD DNU</h4>
                   <p>Sự kiện chào tân 2024 tại khoa QTKD DNU</p>
-                  <a href="./img/Gallery/act_4.jpg" title="Hoạt động tại Zaka Edu" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/act_4.jpg"
+                    title="Hoạt động tại Zaka Edu"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/act_5.JPG" class="img-fluid" alt="">
+                <img src="./img/Gallery/act_5.JPG" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Giải đáp thắc mắc phụ huynh về chương trình học TA</h4>
                   <p>Giải đáp thắc mắc phụ huynh về chương trình học TA</p>
-                  <a href="./img/Gallery/act_5.JPG" title="Hoạt động tại Zaka Edu" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/act_5.JPG"
+                    title="Hoạt động tại Zaka Edu"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity"
+            >
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/act_6.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/act_6.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Sinh viên đăng ký tham gia Workshop</h4>
                   <p>Sinh viên đăng ký tham gia Workshop</p>
-                  <a href="./img/Gallery/act_6.jpg" title="Hoạt động tại Zaka Edu" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/act_6.jpg"
+                    title="Hoạt động tại Zaka Edu"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-cer">
               <div class="gallery-content h-100">
-                <img src="./img/Gallery/cer_1.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/cer_1.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Tặng voucher đổi tiền mặt cho học viên</h4>
                   <p>Tặng voucher đổi tiền mặt cho học viên</p>
-                  <a href="./img/Gallery/cer_1.jpg" title="Product 2" data-gallery="gallery-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="./img/Gallery/cer_1.jpg"
+                    title="Product 2"
+                    data-gallery="gallery-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
             <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-cer">
               <div class="gallery-content h-100">
-                <img src="assets/img/gallery/branding-2.jpg" class="img-fluid" alt="">
+                <img
+                  src="assets/img/gallery/branding-2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
                 <div class="gallery-info">
                   <h4>Branding 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/gallery/branding-2.jpg" title="Branding 2" data-gallery="gallery-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="assets/img/gallery/branding-2.jpg"
+                    title="Branding 2"
+                    data-gallery="gallery-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-team">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-team"
+            >
               <div class="gallery-content h-100">
-                <img src="assets/img/gallery/books-2.jpg" class="img-fluid" alt="">
+                <img src="./img/Gallery/team_1.jpg" class="img-fluid" alt="" />
                 <div class="gallery-info">
                   <h4>Books 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/gallery/books-2.jpg" title="Branding 2" data-gallery="gallery-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="assets/img/gallery/books-2.jpg"
+                    title="Branding 2"
+                    data-gallery="gallery-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-class">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-class"
+            >
               <div class="gallery-content h-100">
-                <img src="assets/img/gallery/app-3.jpg" class="img-fluid" alt="">
+                <img
+                  src="assets/img/gallery/app-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
                 <div class="gallery-info">
                   <h4>App 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/gallery/app-3.jpg" title="App 3" data-gallery="gallery-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="assets/img/gallery/app-3.jpg"
+                    title="App 3"
+                    data-gallery="gallery-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-activity"
+            >
               <div class="gallery-content h-100">
-                <img src="assets/img/gallery/product-3.jpg" class="img-fluid" alt="">
+                <img
+                  src="assets/img/gallery/product-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
                 <div class="gallery-info">
                   <h4>Product 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/gallery/product-3.jpg" title="Product 3" data-gallery="gallery-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="assets/img/gallery/product-3.jpg"
+                    title="Product 3"
+                    data-gallery="gallery-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
             <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-cer">
               <div class="gallery-content h-100">
-                <img src="assets/img/gallery/branding-3.jpg" class="img-fluid" alt="">
+                <img
+                  src="assets/img/gallery/branding-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
                 <div class="gallery-info">
                   <h4>Branding 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/gallery/branding-3.jpg" title="Branding 2" data-gallery="gallery-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="assets/img/gallery/branding-3.jpg"
+                    title="Branding 2"
+                    data-gallery="gallery-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
+            </div>
+            <!-- End gallery Item -->
 
-            <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-team">
+            <div
+              class="col-lg-4 col-md-6 gallery-item isotope-item filter-team"
+            >
               <div class="gallery-content h-100">
-                <img src="assets/img/gallery/books-3.jpg" class="img-fluid" alt="">
+                <img
+                  src="assets/img/gallery/books-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
                 <div class="gallery-info">
                   <h4>Books 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/gallery/books-3.jpg" title="Branding 3" data-gallery="gallery-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="gallery-details.html" title="Xem chi tiết" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a
+                    href="assets/img/gallery/books-3.jpg"
+                    title="Branding 3"
+                    data-gallery="gallery-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="gallery-details.html"
+                    title="Xem chi tiết"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
               </div>
-            </div><!-- End gallery Item -->
-
-          </div><!-- End gallery Container -->
-
+            </div>
+            <!-- End gallery Item -->
+          </div>
+          <!-- End gallery Container -->
         </div>
-
       </div>
-
     </section>
     <!-- /Gallery Section -->
 
-  <!-- Clients Section -->
-  <section id="clients" class="clients section">
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="swiper init-swiper">
-        <script type="application/json" class="swiper-config">
-          {
-            "loop": true,
-            "speed": 1000,
-            "autoplay": {
-              "delay": 5000
-            },
-            "slidesPerView": "auto",
-            "pagination": {
-              "el": ".swiper-pagination",
-              "type": "bullets",
-              "clickable": true
-            },
-            "breakpoints": {
-              "320": {
-                "slidesPerView": 1,
-                "spaceBetween": 40
-              },
-              "480": {
-                "slidesPerView": 2,
-                "spaceBetween": 60
-              },
-              "640": {
-                "slidesPerView": 3,
-                "spaceBetween": 80
-              },
-              "992": {
-                "slidesPerView": 5,
-                "spaceBetween": 120
-              }
-            }
-          }
-        </script>
-        <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><img src="img/clients/client-1.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/clients/client-2.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/clients/client-3.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/clients/client-4.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/clients/client-5.jpg" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="img/clients/client-6.jpg" class="img-fluid" alt=""></div>
-        </div><div class="swiper-pagination"></div>
-      </div>
-
-    </div>
-
-  </section><!-- /Clients Section -->
+    
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -1706,7 +1920,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/glightbox/js/glightbox.min.js"></script>
     <script src="lib/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="lib/imagesloaded//imagesloaded.pkgd.min.js"></script>
+    <script src="lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="lib/swiper/swiper-bundle.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

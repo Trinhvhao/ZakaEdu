@@ -657,75 +657,53 @@
 Team Style
 --------------------------------------------- 
 */
+/*** Team Section Start ***/
+.team-carousel .owl-stage-outer {
+  margin-top: 40px;
+}
 
+.team .team-item {
+  transition: all 0.3s;
+}
 
-  
-  .team-member {
-    position: relative;
-  }
-  
-  .team-member:hover img {
-    top: -120px;
-  }
-  
-  .team-member img {
-    max-width: 220px;
-    border-radius: 50%;
-    position: absolute;
-    top: -110px;
-    left: 50%;
-    transform: translateX(-110px);
-    transition: all .3s;
-  }
-  
-  .team-member .main-content {
-    border-radius: 25px;
-    padding: 140px 30px 40px 30px;
-    background: linear-gradient(45deg, #76d3f6, #d1cf7f);  text-align: center;
-  }
-  
-  .team-member .main-content span.category {
-    color: #cd1c1c;
-    font-size: 15px;
-  }
-  
-  .team-member .main-content h4 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .team-member .main-content ul li {
-    display: inline-block;
-    margin: 0px 2px;
-  }
-  
-  .team-member .main-content ul li a {
-    background-color: #fff;
-    color: #1983e2;
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
-    font-size: 18px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: all .3s;
-  }
-  
-  .team-member .main-content ul li a:hover {
-    background-color: #f0cd55;
-    color: #fff;
-  }
-  .achievements{
-    font-size: 14px;
-    color: #555;
-    margin-top: 10px;
-    list-style-type: disc;
-    padding: 0 0 ;
-    text-align: justify;
-  }
+.team .team-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team .team-item img {
+  transition: 0.3s ease;
+}
+
+.team .team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team .owl-nav .owl-prev,
+.team .owl-nav .owl-next {
+  position: absolute;
+  top: -40px;
+  background: var(--bs-primary);
+  color: var(--bs-white);
+  padding: 5px 30px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.team .owl-nav .owl-prev:hover,
+.team .owl-nav .owl-next:hover {
+  background: var(--bs-dark);
+  color: var(--bs-white);
+}
+
+.team .owl-nav .owl-prev {
+  left: 0;
+}
+
+.team .owl-nav .owl-next {
+  right: 0;
+}
+
   
   
 /*--------------------------------------------------------------
